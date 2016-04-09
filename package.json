@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "fresms",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/malikasinger1/freeSms.git"
   },
-  "homepage": "https://github.com/malikasinger1/salesman-app",
+
   "author": "",
   "license": "ISC",
   "dependencies": {
