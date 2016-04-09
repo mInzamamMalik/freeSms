@@ -1,22 +1,28 @@
+
 {
-  "name": "fresms",
-  "version": "1.0.0",
-  "description": "",
+  "name": "node-js-getting-started",
+  "version": "0.1.5",
+  "description": "A sample Node.js app using Express 4",
   "main": "index.js",
   "scripts": {
-      "start" : "npm install && node index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/malikasinger1/freeSms.git"
-  },
-
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
+   "dependencies": {
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
     "twilio": "^2.9.0"
-  }
+  },
+  "engines": {
+    "node": "0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
