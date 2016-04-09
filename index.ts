@@ -14,6 +14,9 @@ var client = require('twilio')(accountSid, authToken);
 
 let app = express();
 
+app.set('port', (process.env.PORT || 3000));
+
+
 app.use(bodyParser.json());
 
 app.post("/sendSms", (req: Express.Request, res: express.Response, next: Function) => {
@@ -48,6 +51,6 @@ let indexPath = path.resolve(__dirname,"client/www");
 app.use(express.static(indexPath));
  
 
-app.listen(process.env.port || 3000,()=>{
-    console.log("listening on 3000");
+app.listen(app.get("port"), ()=> {
+    console.log('app is running on port', app.get('port'));
 });
