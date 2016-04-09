@@ -13,7 +13,7 @@
     "twilio": "^2.9.0"
   },
   "engines": {
-    "node": "0.12.7"
+    "node": "5.5.0"
   },
   "repository": {
     "type": "git",
