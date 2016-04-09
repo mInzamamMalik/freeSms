@@ -7,6 +7,7 @@ var authToken = '01f07c47d6d53ac3f4a1473c2f72b455';
 //require the Twilio module and create a REST client
 var client = require('twilio')(accountSid, authToken);
 var app = express();
+app.set('port', (process.env.PORT || 3000));
 app.use(bodyParser.json());
 app.post("/sendSms", function (req, res, next) {
     console.log("hitted");
@@ -28,6 +29,6 @@ app.post("/sendSms", function (req, res, next) {
 });
 var indexPath = path.resolve(__dirname, "client/www");
 app.use(express.static(indexPath));
-app.listen(process.env.port || 3000, function () {
-    console.log("listening on 3000");
+app.listen(app.get("port"), function () {
+    console.log('app is running on port', app.get('port'));
 });
