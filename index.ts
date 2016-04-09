@@ -48,6 +48,6 @@ let indexPath = path.resolve(__dirname,"client/www");
 app.use(express.static(indexPath));
  
 
-app.listen(3000,()=>{
+app.listen(process.env.port || 3000,()=>{
     console.log("listening on 3000");
 });
