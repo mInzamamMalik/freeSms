@@ -40,6 +40,7 @@ angular.module('starter', ['ionic'])
 
           $scope.status = "Sent : " + $scope.message;
           console.log("succ: ",suc)
+          $scope.message="";
         },
         function (err) {
           console.log("err: ",err)
